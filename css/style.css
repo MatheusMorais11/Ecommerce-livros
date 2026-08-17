@@ -1,0 +1,112 @@
+/* Aplica as configurações em todos os elementos da página*/
+*{
+    margin: 0; /* Remove as margens padrao do navegador*/
+    padding: 0; /*Remove os espaçamentos internos padrão*/
+    box-sizing: border-box; /* Faz Largura e a altura considerarem o padding e a borda*/
+}
+/* Configuraçoes gerais da pagina*/
+body{
+    font-family: Arial, sans-serif;
+    background-image:url("../images/biblioteca.png"); /*imagem de fundo da tela inicial*/
+    background-size: cover; /* faz a imagem preencher a tela inteira*/
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;/* impede que a imagem fique se repetindo*/
+
+}
+/* Este é o container principal da pagina inicial*/
+.container{
+    min-height: 100vh; /* faz com que o texto ocupe no minimo 100% da altura visivel da tela*/
+
+    display: flex; /* ativa o flexbox*/
+    flex-direction: column; /* Organiza os elementos verticalmente*/
+    justify-content: center; /*Centraliza no eixo vertical*/
+    align-items: center; /*Centraliza no eixo horizontal*/
+}
+
+/*Area de apresentaçao*/
+.apresentacao{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Titulo principal*/
+.apresentacao h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+/*subtitulo*/
+.apresentacao p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/*Container que agrupa os botoes da tela inicial*/
+.botoes{
+    display: flex; /*Coloca os botoes em um layout flexivel*/
+    flex-direction: column;/*coloca um botao embaixo do outro*/
+    gap: 15px;
+}
+
+/* estilo dos botoes da tela inicial*/
+.botoes button{
+    width: 100%;
+    padding: 12px 24px; /*mexe no espaçamento intero(vertical e horizontal)*/
+    font-size: 16px;
+    cursor: pointer;
+    
+
+}
+
+/* Card de entrada no sistema */
+.card-login {
+    background-color: rgba(255, 255, 255, 0.90); /*branco com leve transparencia */
+    padding: 35px;
+    border-radius: 12px; /*arredonda os cantos do card */
+    width: 380px; /* largura do card*/
+    text-align: center; /*centraliza o "Bemvindo(a)"*/
+}
+
+/*titulo de dentro do card*/
+.card-login h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.card-login {
+    background-color:rgba(255, 255, 255, 0.92);
+    padding: 35px;
+    border-radius: 12px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);/*cria uma sombra atras do card*/
+
+
+}
+
+/* Botao principal do Cliente */
+.btn-cliente{
+    background-color: #5a2d18;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-admin{
+    background-color: transparent;
+    color: #5a2d18;
+    border: 1px solid #5a2d18;
+    border-radius: 6px;
+}
+
+/*Efeito ao passar o mouse no botao cliente*/
+.btn-cliente:hover{ /*classe que aplica essas propriedades abaixo somente quando o mouse passa pelo botao*/
+    background-color:#3f1f10;
+
+}
+
+.btn-admin:hover{
+    background-color:#5a2d18;
+    color: white;
+}
