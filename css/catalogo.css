@@ -1,0 +1,241 @@
+/* Configuraçoes da pagina do catalogo*/
+.pagina-catalogo{
+    background-color: #f5f2ef;
+    min-height: 100vh;
+}
+
+/* Cabeçalho das telas do cliente*/
+.cabecalho-cliente{
+    width: 100%;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #5a2d18;
+    color: white;
+}
+
+/*Menu do cabecalho*/
+.menu-cliente{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/*Botoes do cabecalho*/
+.menu-cliente button{
+    padding: 8px 12px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+/*Conteudo principal do catalogo*/
+.catalogo {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+}
+
+.catalogo h1{
+    margin-bottom: 20px;
+}
+
+/*Busca dos livros*/
+.busca-catalogo {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.busca-catalogo input{
+    flex: 1;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.busca-catalogo button {
+    padding: 10px 20px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+}
+
+/* Lista dos Livros*/
+.lista-livros{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*Card individual de cada livro*/
+.card-livro{
+    width: 220px;
+    padding: 15px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Espaco para colocar a capa do livro quando implementar*/
+.capa-placeholder{
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ddd;
+
+    margin-bottom: 15px;
+}
+
+.card-livro h3,
+.card-livro p,
+.card-livro strong{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn-detalhes{
+    width: 100px;
+    padding: 8px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+/*Camada escura na tela principal do catalogo*/
+.modal-livro{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.60);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Caixa Principal do modal*/
+.conteudo-modal-livro{
+    position: relative;
+
+    width: 85%;
+    max-width: 1000px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 25px;
+}
+
+/*Área principal com capa + informaçoes*/
+.detalhes-livro{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/*Capa do livro*/
+.capa-modal{
+    width: 180px;
+    height: 260px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ddd;
+}
+
+/* Informaçoes do livro*/
+
+.informacoes-livro{
+    flex: 1;
+}
+
+/* Botao X*/
+.btn-fechar-livro{
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    background: none;
+    border: none;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Área de compra do livro*/
+
+.area-compra-livro{
+    width: 220px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    justify-content: center;
+}
+
+/*Preco em destaque*/
+.preco-livro-modal{
+    font-size: 24px;
+    color: #5a2d18;
+}
+
+/*Quantidade*/
+.quantidade-livro{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.quantidade-livro input{
+    padding: 8px;
+    width: 80px;
+}
+
+/*botao adicionar ao carrinho*/
+.btn-adicionar-carrinho{
+    padding: 10px;
+
+    background-color:#5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
