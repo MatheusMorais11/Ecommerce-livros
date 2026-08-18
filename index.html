@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce de Livros</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Estou utilizando uma biblioteca de icones do Boostrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
 
-<body>
+<body class="pagina-inicial">
+
     <main class="container"> <!-- Cria um conteiner principal-->
 
         <div class="apresentacao">
@@ -21,12 +24,62 @@
         <h2>Bem-vindo(a)</h2>
 
         <div class="botoes">
-        <button class="btn-cliente">Entrar como Cliente</button>
-        <button class="btn-admin">Entrar como Admin</button> 
+        <button class="btn-cliente">
+            <i class="bi bi-book"></i>
+            Entrar como Cliente
+        </button>
+
+        <button class="btn-admin">
+            <i class="bi bi-shield-lock"></i>
+            Entrar como Admin
+        </button> 
+
         </div> 
      </div>
 
     </main>
+
+    <!-- Modal de login do cliente -->
+        <div class="modal-login">
+        
+            <div class="conteudo-modal">
+
+                <!--Botao para fechar o modal-->
+                <buttom class="btn-fechar-modal">
+                    <i class="bi bi-x-lg"></i>
+                </buttom>
+
+                <h2>Login</h2>
+                <p>Selecione um cliente para entrar </p>
+
+                    <div class="seletor-cliente">
+
+                            <button class="btn-selecionar-cliente">
+                             Selecionar cliente
+                            <i class="bi bi-chevron-down"></i>  
+                        </button>
+
+                        <div class="lista-clientes">
+                                <button>Cliente 1</button>
+                                <button>Cliente 2</button>
+                                <button>Cliente 3</button>
+                                <button>Cliente 4</button>
+                                <button>Cliente 5</button>
+                                <button>Cliente 6</button>
+                        </div>
+                      
+                        
+                    </div> 
+                    <!--So aparece depois que um cliente for selecionado-->
+                    <buttom class="btn-entrar-cliente">
+                        Entrar
+                    </buttom>
+                    <p class="texto-cadastro">Ainda não cadastrado?</p>
+
+                    <button class="btn-cadastrar">Cadastrar-se</button>
+             </div> 
+         </div> 
+         <script src="js/app.js"></script> /* conexao com o javascript*/
 </body>
 
 </html>

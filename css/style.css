@@ -4,15 +4,21 @@
     padding: 0; /*Remove os espaçamentos internos padrão*/
     box-sizing: border-box; /* Faz Largura e a altura considerarem o padding e a borda*/
 }
+
 /* Configuraçoes gerais da pagina*/
-body{
+body{ /* Configuraçoes gerais de todas as paginas*/
     font-family: Arial, sans-serif;
-    background-image:url("../images/biblioteca.png"); /*imagem de fundo da tela inicial*/
+
+}  
+.pagina-inicial{/*fundo excluiso da tela inicial*/
+
+    background-image: /*camada escura sobre a imagem de fundo*/linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/biblioteca.png");/*imagem de fundo da tela inicial*/
     background-size: cover; /* faz a imagem preencher a tela inteira*/
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat;/* impede que a imagem fique se repetindo*/
 
 }
+
 /* Este é o container principal da pagina inicial*/
 .container{
     min-height: 100vh; /* faz com que o texto ocupe no minimo 100% da altura visivel da tela*/
@@ -32,14 +38,17 @@ body{
 
 /* Titulo principal*/
 .apresentacao h1{
-    font-size: 42px;
+    font-size: 40px;
+    font-weight: 700;
     margin-bottom: 10px;
+    
 }
 
 /*subtitulo*/
 .apresentacao p{
     font-size: 20px;
     margin-bottom: 0;
+    color: #d6a77a;
 }
 
 /*Container que agrupa os botoes da tela inicial*/
@@ -66,23 +75,14 @@ body{
     border-radius: 12px; /*arredonda os cantos do card */
     width: 380px; /* largura do card*/
     text-align: center; /*centraliza o "Bemvindo(a)"*/
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);/*cria uma sombra atras do card*/
 }
 
 /*titulo de dentro do card*/
 .card-login h2 {
     font-size: 24px;
     margin-bottom: 25px;
-}
-
-.card-login {
-    background-color:rgba(255, 255, 255, 0.92);
-    padding: 35px;
-    border-radius: 12px;
-    width: 380px;
-    text-align: center;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);/*cria uma sombra atras do card*/
-
-
+    font-weight: normal;
 }
 
 /* Botao principal do Cliente */
@@ -109,4 +109,147 @@ body{
 .btn-admin:hover{
     background-color:#5a2d18;
     color: white;
+}
+
+/* Espaçamento entre os icones e o texto dos botoes*/
+.botoes button i{
+    margin-right: 8px;
+}
+
+.modal-login{ /*camada que cobre a tela quando o modal abrir*/
+    position: fixed; /* Mantem o modal na tela*/
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.60);/*escurece a tela de tras*/
+
+    display: none; /*modal começa escondido*/
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza o modal*/
+.conteudo-modal{
+    position: relative;/* mantem tudo do modal no lugar que defini aqui(exceto oq eu fizer fora)*/
+
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.40);
+
+    
+}
+
+/*Botao para fechar o modal*/
+.btn-fechar-modal{
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    background: none;
+    border: none;
+
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.conteudo-modal h2{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.conteudo-modal p{
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.lista-clientes {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+
+    max-height: 180px; /* altura maxima da lista*/
+    overflow-y: auto; /* cria rolagem vertical quando precisar*/
+}
+
+.lista-clientes button{
+    padding: 12px;
+    cursor: pointer;
+
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.btn-cadastrar{
+    width: 100%;
+    padding: 12px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.btn-selecionar-cliente{
+    width: 100%;
+    padding: 12px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.seletor-cliente{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*Botao de entrar apos sleecionar um cliente*/
+.btn-entrar-cliente{
+    display: none;
+
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: #5a2d18;
+
+    border: 1px solid #5a2d18;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-entrar-cliente:hover {
+    background-color: #5a2d18;
+    color: white;
+}
+
+/*Texto acima do botao do cadastro*/
+.texto-cadastro{
+    margin-bottom: 10px !important; /* esse !important é para compensar a regra generica que tem para conteudo modal*/
+    color: #555;
+    font-size: 14px;
 }
