@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/checkout.css">
+
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    
+
+</head>
+<body class="pagina-checkout">
+
+    <header class="cabecalho-cliente">
+        <h2>E-commerce de Livros</h2>
+
+        <nav class="menu-cliente">
+            <button class="btn-voltar-carrinho">
+                <i class="bi bi-arrow-left"></i>
+                Carrinho
+            </button>
+        </nav>
+    </header>
+
+    <main class="checkout">
+
+        <h1>Finalizar Compra</h1>
+
+        <section class="etapa-endereco">
+
+            <h2>1. Endereço de entrega</h2>
+            <p>Selecione um endereço cadastrado</p>
+
+            <div class="enderecos">
+
+            <label class="endereco"> 
+                
+                <input type="radio" name="endereco" checked> <!--Esse "radio" serve para quando o usuario marcar uma caixinha, a outra desmarca automatiamente-->
+                <span>
+                    <strong>Casa</strong><br>
+                    Rua Tailandia, 457 - Mogi das Cruzes/SP
+                </span>
+            </label>
+
+            <label class="endereco">
+                <input type="radio" name="endereco">
+                <span>
+                    <strong>Trabalho</strong><br>
+                    Avenida America, 527 - Mogi das cruzes/SP
+                </span>
+            </label>
+
+        </div>
+
+        <button class="btn-novo-endereco">
+            + Cadastra novo endereco
+        </button>
+
+        <div class="form-novo-endereco" style="display: none;">
+            <h3>Novo endereço</h3>
+
+            <label>
+                Apelido:
+                <input type="text" placeholder="Ex: Casa">
+            </label>
+
+            <label>
+                CEP:
+                <input type="text" placeholder="00000-000">
+            </label>
+
+            <label>
+                Rua:
+                <input type="text">
+            </label>
+
+            <label>
+                Número:
+                <input type="text">
+            </label>
+
+            <label>
+                Cidade:
+                <input type="text">
+            </label>
+
+            <label>
+                Estado:
+                <input type="text" maxlength="2">
+            </label>
+
+            <button class="btn-salvar-endereco">
+                Salvar endereço
+            </button>
+        </div>
+
+        <button class="btn-continuar-pagamento">
+            Continuar para pagamento
+        </button>
+
+    </section>
+
+    <section class="etapa-pagamento" style="display: none;">
+        <h2>2. Pagamento</h2>
+        <p>Selecione um cartão cadastrado</p>
+
+        <div class="cartoes">
+
+            <label class="cartao">
+                <input type="radio" name="cartao" checked>
+                <span>
+                    <strong>Mastercard final 4587</strong><br>
+                    Cartao preferencial
+                </span>
+            </label>
+
+            <label class="cartao">
+                <input type="radio" name="cartao">
+                <span>
+                    <strong>Visa final 2021</strong>
+                </span>
+            </label>
+            
+        </div>
+
+        <button class="btn-novo-cartao">
+            + Cadastrar novo cartão
+        </button>
+
+        <button class="btn-confirmar-pedido">
+            Continuar
+        </button>
+        
+    </section>
+
+    </main>
+    <script src="../js/checkout.js"></script>
+</body>
+</html>

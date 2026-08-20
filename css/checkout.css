@@ -1,0 +1,156 @@
+.pagina-checkout {
+    background-color: #f5f2ef;
+    min-height: 100vh;
+}
+
+.cabecalho-cliente {
+    width: 100%;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    background-color: #5a2d18;
+    color:white;
+}
+
+.menu-cliente button {
+    padding: 8px 12px;
+
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.checkout {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.checkout h1{
+    margin-bottom: 25px;
+}
+
+.etapa-endereco {
+    padding: 25px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.etapa-endereco h2{
+    margin-bottom: 10px;
+}
+
+.etapa-endereco > p{
+    margin-bottom: 20px;
+}
+
+.enderecos {
+    margin-bottom: 20px;
+}
+
+.endereco {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.btn-novo-endereco,
+.btn-continuar-pagamento{
+    padding: 10px 15px;
+
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-novo-endereco{
+    background-color: white;
+    color: 5a2d18;
+}
+
+.btn-novo-endereco {
+    background-color: white;
+    color: #5a2d18;
+    border: 1px solid #5a2d18;
+}
+
+.btnc-continuar-pagamento {
+    margin-left: 10px;
+
+    background-color: #5a2d18;
+    color:white;
+
+    border: none;
+}
+
+.etapa-pagamento {
+    padding: 25px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.etapa-pagamento h2{
+    margin-bottom: 10px;
+}
+
+.etapa-pagamento > p{
+    margin-bottom: 20px;
+}
+
+.cartoes {
+    margin-bottom: 20px;
+}
+
+.cartao{
+    display: flex;
+    aign-items: center;
+    gap: 10px;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.btn-novo-cartao,
+.btn-confirmar-pedido{
+    padding: 10px 15px;
+
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-novo-cartao{
+    background-color: white;
+    color: #5a2d18;
+    border: 1px solid #5a2d18;
+}
+
+.btn-confirmar-pedido{
+    margin-left: 10px;
+
+    background-color: #5a2d18;
+    color:white;
+
+    border: none;
+
+}

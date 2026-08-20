@@ -1,0 +1,130 @@
+/*Pagina do carrinho*/
+.pagina-carrinho {
+    background-color: #f5f2ef;
+    min-height: 100vh;
+}
+
+/*Cabecalho*/
+.cabecalho-cliente {
+    width: 100%;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #5a2d18;
+    color: white;
+}
+
+.menu-cliente button {
+    padding: 8px 12px;
+
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+/*Area Princial*/
+.carrinho {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+}
+
+.carrinho h1{
+    margin-bottom: 20px;
+}
+
+/*Item que esta no carrinho*/
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 20px;
+
+    backgroud-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.capa-carrinho{
+    width: 100px;
+    height: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ddd;
+}
+
+.info-item-carrinho {
+    flex: 1;
+}
+
+.info-item-carrinho h3,
+.info-item-carrinho p{
+    margin-bottom: 8px;
+}
+
+/*controle de quantidade*/
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.controle-quantidade button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-remover {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/*parte do resumo*/
+.resumo-carrinho {
+    margin-top: 25px;
+    padding: 20px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cupom-carrinho {
+    margin-bottom: 20px;
+}
+
+.cupom-carrinho input {
+    padding: 8px;
+}
+
+.btn-aplicar-cupom {
+    padding: 8px 12px;
+}
+
+.valores-carrinho{
+    margin-bottom: 20px;
+}
+
+.btn-finalizar-compra {
+    padding: 10px 20px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}

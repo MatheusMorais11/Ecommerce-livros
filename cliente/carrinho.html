@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrinho.css">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body class="pagina-carrinho">
+    
+    <header class="cabecalho-cliente">
+
+        <h2>E-commerce de Livros</h2>
+
+        <nav class="menu-cliente">
+            <button class="btn-voltar-catalogo">
+                <i class="bi bi-arrow-left"></i>
+                Catálogo
+            </button>
+
+            <button class="btn-perfil">
+                <i class="bi bi-person-circle"></i>
+                Meu Perfil
+            </button>
+        </nav>
+    </header>
+
+    <main class="carrinho">
+        <h1>Meu Carrinho</h1>
+
+        <section class="itens-carrinho">
+
+            <p class="carrinho-vazio" style="display: none;">
+             Seu carrinho está vazio.
+            </p>
+
+            <!-- Demonstraçao do Prototipo(tirar depois)-->
+             <article class="item-carrinho">
+
+                <div class="capa-carrinho">
+                    Capa
+                </div>
+
+                <div class="info-item-carrinho">
+                    <h3>O Hobbit</h3>
+                    <p> J.R.R Tolkien</p>
+                    <strong>R$ 49,90</strong>
+                </div>
+
+                <div class="controle-quantidade">
+                    <button class="btn-diminuir">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="btn-aumentar">+</button>
+                </div>
+
+                <button class="btn-remover">
+                    <i class="bi bi-trash"></i>
+                    Remover
+                </button>
+
+             </article>
+
+             
+            
+        </section>
+
+        <section class="resumo-carrinho">
+
+            <div class="cupom-carrinho">
+                <label for="cupom">Cupom</label>
+                <input type="text" id="cupom" placeholder="Digite um cupom">
+                <button class="btn-aplicar-cupom">Aplicar</button>
+            </div>
+
+            <div class="valores-carrinho">
+                <p>Subtotal: <strong class="valor-subtotal">R$ 49,90</strong></p>
+                <p>Desconto: <strong class="valor-desconto">R$ 0,00</strong></p>
+                <p>Total: <strong class="valor-total">R$ 49,90</strong></p>
+            </div>
+
+            <button class="btn-finalizar-compra">
+                Finalizar compra
+            </button>
+
+        </section>
+
+    </main>
+    
+    <script src="../js/carrinho.js"></script>
+
+</body>
+</html>

@@ -9,6 +9,12 @@ const botaoFecharLivro = document.querySelector(".btn-fechar-livro");
 
 const botaoAdicionarCarrinho = document.querySelector(".btn-adicionar-carrinho");
 
+const botaoCarrinho = document.querySelector(".btn-carrinho");
+
+botaoCarrinho.addEventListener("click", function(){
+    window.location.href = "carrinho.html";
+});
+
 //Abre o modao ao clicar em qualquer botao "ver detalhes"
 botoesDetalhes.forEach(function (botao){
 
