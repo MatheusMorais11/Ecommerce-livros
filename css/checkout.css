@@ -132,6 +132,7 @@
 }
 
 .btn-novo-cartao,
+.btn-continuar-resumo,
 .btn-confirmar-pedido{
     padding: 10px 15px;
 
@@ -145,6 +146,7 @@
     border: 1px solid #5a2d18;
 }
 
+.btn-continuar-resumo,
 .btn-confirmar-pedido{
     margin-left: 10px;
 
@@ -152,5 +154,81 @@
     color:white;
 
     border: none;
-
 }
+
+.form-novo-cartao{
+    margin-top: 20px;
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-novo-cartao h3 {
+    margin-bottom: 15px;
+}
+
+.form-novo-cartao label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-novo-cartao input {
+    display: block;
+
+    width: 100%;
+    max-width: 350px;
+
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.btn-salvar-cartao{
+    padding: 10px 15px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.etapa-resumo{
+    padding: 25px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.etapa-resumo h2 {
+    margin-bottom: 20px;
+}
+
+.resumo-produto,
+.resumo-entrega,
+.resumo-pagamento,
+.resumo-valores {
+    padding: 15px ;
+    border-bottom: 1px solid #ddd;
+}
+
+.resumo-valores {
+    border-bottom: none;
+}
+
+.btn-confirmar-pedido {
+    margin-top: 15px;
+    padding: 10px 15px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+

@@ -132,8 +132,70 @@
             + Cadastrar novo cartão
         </button>
 
-        <button class="btn-confirmar-pedido">
+    <div class="form-novo-cartao" style="display: none;">
+
+        <h3>Novo cartão</h3>
+
+        <label>
+            Número do cartão:
+            <input type="text" placeholder="0000 0000 0000 0000">
+        </label>
+
+        <label>
+            Nome do cartão:
+            <input type="text">
+        </label>
+
+        <label>
+            Validade:
+            <input type="text" placeholder="MM/AA">
+        </label>
+
+        <label>
+            CVV:
+            <input type="text" maxlength="3">
+        </label>
+
+        <button class="btn-salvar-cartao">
+            Salvar cartão
+        </button>
+    </div>
+
+        <button class="btn-continuar-resumo">
             Continuar
+        </button>
+        
+    </section>
+
+    <section class="etapa-resumo" style="display: none;">
+
+        <h2>3. Resumo do pedido</h2>
+
+        <div class="resumo-produto">
+            <h3>O Hobbit</h3>
+            <p>Quantidade: 2</p>
+            <p>Preço unitario: 49,90</p>
+        </div>
+
+        <div class="resumo-entrega">
+            <h3>Entrega</h3>
+            <p>Casa</p>
+            <p>Rua Tailandia, 457 - Mogi das Cruzes/SP</p>
+        </div>
+
+        <div class="resumo-valores">
+            <p>Subtotal: <strong>R$ 99,80</strong></p>
+            <p>Desconto: <strong>R$ 9,98</strong></p>
+            <p>Frete: <strong>R$ 99,82</strong></p>
+        </div>
+
+        <div class="resumo-pagamento">
+            <h3>Pagamento</h3>
+            <p>Mastercard final 4587</p>
+        </div>
+
+        <button class="btn-confirmar-pedido">
+            Confirmar pedido
         </button>
         
     </section>
