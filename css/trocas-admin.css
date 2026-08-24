@@ -1,0 +1,122 @@
+.pagina-trocas-admin {
+    background-color: #f5f2ef;
+}
+
+.cabecalho-admin {
+    background-color: #5a2d18;
+    color: white;
+
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-voltar-admin {
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.trocas-admin {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.trocas-admin h1 {
+    margin-bottom: 25px;
+}
+
+.lista-trocas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.troca-admin {
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+.info-troca h2 {
+    margin-bottom: 10px;
+}
+
+.info-troca p {
+    margin: 5px 0;
+}
+
+.status-troca {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.status-troca strong {
+    display: inline-block;
+
+    padding: 8px 12px;
+
+    border: 1px solid #5a2d18;
+    border-radius: 6px;
+
+    color: #5a2d18;
+}
+
+.acoes-troca {
+    display: flex;
+    gap: 10px;
+}
+
+.acoes-troca button {
+    padding: 10px 15px;
+
+    border: 1px solid #5a2d18;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.btn-aceitar-troca,
+.btn-confirmar-recebimento-troca,
+.btn-processar-troca {
+    background-color: #5a2d18;
+    color: white;
+}
+
+.btn-negar-troca {
+    background-color: white;
+    color: #5a2d18;
+}
+
+.cupom-gerado {
+    margin-top: 15px;
+    padding: 15px;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.codigo-cupom {
+    display: inline-block;
+
+    margin-left: 5px;
+    padding: 5px 10px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border-radius: 5px;
+}

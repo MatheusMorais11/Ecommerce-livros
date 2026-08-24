@@ -12,6 +12,8 @@ const botaoInformarDespacho = document.querySelector(".btn-informar-despacho");
 
 const botoesVerDetalhes = document.querySelectorAll(".btn-ver-detalhes");
 
+const botaoVoltarCatalogo = document.querySelector(".btn-voltar-catalogo");
+
 botaoCancelarPedido.addEventListener("click", function(){
 
     const pedido = botaoCancelarPedido.closest(".pedido");//procura um elemtno em ".pedido" que tenha sido usado anteriormente
@@ -85,4 +87,8 @@ botoesVerDetalhes.forEach(function (botao){
             botao.textContent = "Ver detalhes";
         }
     });
+});
+
+botaoVoltarCatalogo.addEventListener("click", function () {
+    window.location.href = "catalogo.html";
 });

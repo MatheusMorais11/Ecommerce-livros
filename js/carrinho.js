@@ -28,6 +28,10 @@ const valorDesconto = document.querySelector(".valor-desconto");
 
 const botaoFinalizarCompra = document.querySelector(".btn-finalizar-compra");
 
+const botaoVoltarCatalogo = document.querySelector(".btn-voltar-catalogo");
+
+const botaoPerfil = document.querySelector(".btn-perfil");
+
 botaoFinalizarCompra.addEventListener("click", function (){
     window.location.href = "checkout.html";
 });
@@ -85,4 +89,12 @@ function atualizarValores(){
 
     valorTotal.textContent = "R$ " + total.toFixed(2).replace(".", ",");
 }
+
+botaoVoltarCatalogo.addEventListener("click", function () {
+    window.location.href = "catalogo.html";
+});
+
+botaoPerfil.addEventListener("click", function () {
+    window.location.href = "perfil.html";
+});
 

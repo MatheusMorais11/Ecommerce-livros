@@ -87,6 +87,273 @@
 
         </div>
     </section>
+
+<section class="enderecos-cliente">
+
+    <div class="cabecalho-secao-perfil">
+        <h2>Endereços</h2>
+
+        <button class="btn-novo-endereco">
+            + Adicionar endereço
+        </button>
+    </div>
+
+<div class="form-novo-endereco-perfil" style="display: none;">
+
+    <h3>Novo endereço</h3>
+
+    <label>
+        Apelido:
+        <input type="text">
+    </label>
+
+    <label>
+        Rua:
+        <input type="text">
+    </label>
+
+    <label>
+        Número:
+        <input type="text">
+    </label>
+
+    <label>
+        Cidade:
+        <input type="text">
+    </label>
+
+    <label>
+        Estado:
+        <input type="text" maxlength="2">
+    </label>
+
+    <button class="btn-salvar-novo-endereco">
+        Salvar endereço
+    </button>
+
+    <button class="btn-cancelar-novo-endereco">
+        Cancelar
+    </button>
+
+</div>
+
+    <div class="endereco-cliente">
+
+        <h3>Casa</h3>
+
+        <p>Rua Tailândia, 457</p>
+        <p>Mogi das Cruzes - SP</p>
+        <p>CEP: 00000-000</p>
+
+        <div class="tipo-endereco">
+            <span>Entrega</span>
+            <span>Cobrança</span>
+        </div>
+
+        <button class="btn-editar-endereco">
+            Editar
+        </button>
+
+    </div>
+
+<div class="form-editar-endereco" style="display: none;">
+
+    <h3>Editar endereço</h3>
+
+    <label>
+        Apelido:
+        <input type="text" class="editar-apelido-endereco" value="Casa">
+    </label>
+
+    <label>
+        Rua:
+        <input type="text" class="editar-rua-endereco" value="Rua Tailândia">
+    </label>
+
+    <label>
+        Número:
+        <input type="text" class="editar-numero-endereco" value="457">
+    </label>
+
+    <label>
+        Cidade:
+        <input type="text" class="editar-cidade-endereco" value="Mogi das Cruzes">
+    </label>
+
+    <label>
+        Estado:
+        <input type="text" class="editar-estado-endereco" value="SP">
+    </label>
+
+    <button class="btn-salvar-endereco-perfil">
+        Salvar alterações
+    </button>
+
+    <button class="btn-cancelar-edicao-endereco">
+        Cancelar
+    </button>
+
+</div>
+
+</section>    
+
+<section class="cartoes-cliente">
+
+    <div class="cabecalho-secao-perfil">
+        <h2>Cartões</h2>
+
+        <button class="btn-novo-cartao">
+            + Adicionar cartão
+        </button>
+    </div>
+
+<div class="form-novo-cartao-perfil" style="display: none;">
+
+    <h3>Novo cartão</h3>
+
+    <label>
+        Número do cartão:
+        <input type="text">
+    </label>
+
+    <label>
+        Titular:
+        <input type="text">
+    </label>
+
+    <label>
+        Validade:
+        <input type="text" placeholder="MM/AA">
+    </label>
+
+    <label>
+        CVV:
+        <input type="text" maxlength="3">
+    </label>
+
+    <button class="btn-salvar-novo-cartao">
+        Salvar cartão
+    </button>
+
+    <button class="btn-cancelar-novo-cartao">
+        Cancelar
+    </button>
+
+</div>
+
+    <div class="cartao-cliente">
+
+        <h3>Mastercard final 1234</h3>
+
+        <p><strong>Titular:</strong> Cliente 1</p>
+        <p><strong>Validade:</strong> 12/29</p>
+
+        <span class="cartao-preferencial">
+            Preferencial
+        </span>
+
+        <button class="btn-editar-cartao">
+            Editar
+        </button>
+
+<div class="form-editar-cartao" style="display: none;">
+
+    <h3>Editar cartão</h3>
+
+    <label>
+        Número do cartão:
+        <input type="text"
+            class="editar-numero-cartao"
+            value="**** **** **** 1234">
+    </label>
+
+    <label>
+        Titular:
+        <input type="text"
+            class="editar-titular-cartao"
+            value="Cliente 1">
+    </label>
+
+    <label>
+        Validade:
+        <input type="text"
+            class="editar-validade-cartao"
+            value="12/29">
+    </label>
+
+    <label>
+        CVV:
+        <input type="text"
+            class="editar-cvv-cartao"
+            maxlength="3">
+    </label>
+
+    <button class="btn-salvar-cartao-perfil">
+        Salvar alterações
+    </button>
+
+    <button class="btn-cancelar-edicao-cartao">
+        Cancelar
+    </button>
+
+</div>
+
+    </div>
+
+</section>
+
+<section class="cupons-cliente">
+
+    <h2>Meus Cupons</h2>
+
+    <div class="cupom-cliente">
+
+        <div>
+            <h3>TROCA0997</h3>
+            <p>Cupom gerado por troca</p>
+        </div>
+
+        <strong>R$ 39,90</strong>
+
+    </div>
+
+    <div class="cupom-cliente">
+
+        <div>
+            <h3>LIVRO10</h3>
+            <p>Cupom promocional</p>
+        </div>
+
+        <strong>10% de desconto</strong>
+
+    </div>
+
+</section>
+
+<section class="senha-cliente">
+
+    <h2>Alterar senha</h2>
+
+    <label>
+        Senha atual:
+        <input type="password" class="senha-atual">
+    </label>
+
+    <label>
+        Nova senha:
+        <input type="password" class="nova-senha">
+    </label>
+
+    <label>
+        Confirmar nova senha:
+        <input type="password" class="confirmar-senha">
+    </label>
+
+    <button class="btn-alterar-senha">
+        Alterar senha
+    </button>
+
+</section>
 </main>
     
 <script src="../js/perfil.js"></script>

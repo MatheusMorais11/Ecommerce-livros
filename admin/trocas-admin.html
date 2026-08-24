@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocas e Devoluções - Administração</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/trocas-admin.css">
+
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body class="pagina-trocas-admin">
+    
+    <header class="cabecalho-admin">
+
+        <h2>E-commerce de Livros</h2>
+
+        <button class="btn-voltar-admin">
+            <i class="bi bi-arrow-left"></i>
+            Painel
+        </button>
+
+    </header>
+
+    <main class="trocas-admin">
+
+        <h1>Trocas e Devoluções</h1>
+
+        <section class="lista-trocas">
+
+            <article class="troca-admin">
+
+                <div class="info-troca">
+                    <h2>Pedido #0999</h2>
+
+                    <p><strong>Cliente:</strong> Cliente 3</p>
+                    <p><strong>Produto:</strong> It</p>
+                    <p><strong>Motivo:</strong> Produto incorreto</p>
+                    <p><strong>Descrição:</strong> Recebi uma edição diferente da solicitada.</p>
+                </div>
+
+                <div class="status-troca">
+                    <strong>Troca solicitada</strong>
+                </div>
+
+                <div class="acoes-troca">
+                    <button class="btn-aceitar-troca">
+                        Aceitar troca
+                    </button>
+
+                    <button class="btn-negar-troca">
+                        Negar troca
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="troca-admin">
+
+                <div class="info-troca">
+                    <h2>Pedido #0998</h2>
+
+                    <p><strong>Cliente:</strong> Cliente 4</p>
+                    <p><strong>Produto:</strong> O Hobbit</p>
+                    <p><strong>Motivo:</strong> Produto danificado</p>
+                </div>
+
+                <div class="status-troca">
+                    <strong>Item enviado</strong>
+                </div>
+
+                <div class="acoes-troca">
+                    <button class="btn-confirmar-recebimento-troca">
+                        Confirmar recebimento
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="troca-admin">
+
+                <div class="info-troca">
+                    <h2>Pedido #0997</h2>
+
+                    <p><strong>Cliente:</strong> Cliente 5</p>
+                    <p><strong>Produto:</strong> 1984</p>
+                    <p><strong>Motivo:</strong> Produto com defeito</p>
+                </div>
+
+                <div class="status-troca">
+                    <strong>Item recebido</strong>
+                </div>
+
+                <div class="acoes-troca">
+                    <button class="btn-processar-troca">
+                        Processar troca
+                    </button>
+                </div>
+                
+                <div class="cupom-gerado" style="display: none;">
+
+                    <strong>Cupom gerado:</strong>
+
+                    <span class="codigo-cupom">
+                        TROCA0997
+                    </span>
+
+                    <p>Valor: R$ 39,90</p>
+
+                </div>
+
+            </article>
+            
+        </section>
+
+    </main>
+
+    <script src="../js/trocas-admin.js"></script>
+    
+</body>
+</html>

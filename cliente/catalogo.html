@@ -21,6 +21,11 @@
         <h2> E-commerce de Livros</h2>
 
         <nav class="menu-cliente">
+
+            <button class="btn-pedidos">
+                <i class="bi bi-box-seam"></i>
+                Meus Pedidos
+            </button>
             <button class="btn-notificacoes">
                 <i class="bi bi-bell"></i>
             </button>
@@ -45,9 +50,11 @@
 
         <!-- Busca-->
          <div class="busca-catalogo">
-            <input type="text" placeholder="Buscar livros...">
+            <input type="text"
+            class="campo-busca-catalogo"
+            placeholder="Buscar livros...">
 
-            <button>
+            <button class="btn-buscar-catalogo">
                 <i class="bi bi-search"></i>
                 Buscar
             </button>
@@ -102,9 +109,9 @@
         <div class="conteudo-modal-livro">
 
          <!--Botao para fechar o modal-->
-            <buttom class="btn-fechar-livro">
+            <button class="btn-fechar-livro">
                  <i class="bi bi-x-lg"></i>
-            </buttom>
+            </button>
            
             <div class="detalhes-livro">
 
@@ -135,7 +142,7 @@
 
                 <div class="quantidade-livro">
                     <label for="quantidade">Quantidade:</label>
-                    <input typer="number" id="quantidade" value="1" min="1">
+                    <input type="number" id="quantidade" value="1" min="1">
 
                     <button class="btn-adicionar-carrinho">
                         <i class="b1 b1-cart-plus"></i>
@@ -147,6 +154,43 @@
             </div>
          </div>
      </div>
+
+<!-- Chatbot -->
+<button class="btn-chatbot">
+    <i class="bi bi-chat-dots"></i>
+</button>
+
+<div class="chatbot" style="display: none;">
+
+    <div class="cabecalho-chatbot">
+        <strong>Assistente de Livros</strong>
+
+        <button class="btn-fechar-chatbot">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+
+    <div class="mensagens-chatbot">
+
+        <p class="mensagem-bot">
+            Olá! Posso ajudar você a encontrar sua próxima leitura.
+        </p>
+
+    </div>
+
+    <div class="entrada-chatbot">
+
+        <input type="text"
+            class="campo-chatbot"
+            placeholder="Digite sua mensagem...">
+
+        <button class="btn-enviar-chatbot">
+            Enviar
+        </button>
+
+    </div>
+
+</div>    
      <script src="../js/catalogo.js"></script>
 </body>
 </html>

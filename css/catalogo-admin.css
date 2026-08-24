@@ -1,0 +1,255 @@
+.pagina-catalogo-admin {
+    background-color: #f5f2ef;
+}
+
+.cabecalho-admin {
+    background-color: #5a2d18;
+    color: white;
+
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-voltar-admin {
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.catalogo-admin {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.cabecalho-catalogo-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.btn-novo-livro {
+    padding: 10px 15px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.lista-livros-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.livro-admin {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 20px;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.capa-livro-admin {
+    width: 100px;
+    height: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ddd;
+}
+
+.info-livro-admin {
+    flex: 1;
+}
+
+.info-livro-admin h2 {
+    margin-bottom: 10px;
+}
+
+.info-livro-admin p {
+    margin: 5px 0;
+}
+
+.acoes-livro-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.acoes-livro-admin button {
+    padding: 10px 15px;
+
+    border: 1px solid #5a2d18;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.btn-editar-livro,
+.btn-alterar-estoque {
+    background-color: #5a2d18;
+    color: white;
+}
+
+.btn-inativar-livro,
+.btn-reativar-livro {
+    background-color: white;
+    color: #5a2d18;
+}
+
+.modal-editar-livro {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.60);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-modal-editar {
+    position: relative;
+
+    width: 450px;
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 8px;
+}
+
+.conteudo-modal-editar h2 {
+    margin-bottom: 20px;
+}
+
+.conteudo-modal-editar label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.conteudo-modal-editar input {
+    display: block;
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-fechar-edicao {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.btn-salvar-edicao {
+    width: 100%;
+    padding: 10px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.modal-cadastrar-livro {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.60);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-modal-cadastrar {
+    position: relative;
+
+    width: 450px;
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 8px;
+}
+
+.conteudo-modal-cadastrar h2 {
+    margin-bottom: 20px;
+}
+
+.conteudo-modal-cadastrar label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.conteudo-modal-cadastrar input {
+    display: block;
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-fechar-cadastro {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.btn-salvar-cadastro-livro {
+    width: 100%;
+    padding: 10px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Análise de Vendas - Administração</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/analise-admin.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="pagina-analise-admin">
+
+    <header class="cabecalho-admin">
+
+        <h2>E-commerce de Livros</h2>
+
+        <button class="btn-voltar-admin">
+            <i class="bi bi-arrow-left"></i>
+            Painel
+        </button>
+
+    </header>
+
+    <main class="analise-admin">
+
+        <h1>Análise de Vendas</h1>
+
+        <section class="filtros-analise">
+
+            <h2>Filtros</h2>
+
+            <div class="campos-filtros">
+
+                <label>
+                    Data inicial:
+                    <input type="date">
+                </label>
+
+                <label>
+                    Data final:
+                    <input type="date">
+                </label>
+
+                <label>
+                    Categoria:
+                    <select>
+                        <option>Todas</option>
+                        <option>Fantasia</option>
+                        <option>Ficção</option>
+                        <option>Terror</option>
+                    </select>
+                </label>
+
+                <button class="btn-gerar-analise">
+                    Gerar análise
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="grafico-analise">
+
+            <div class="cabecalho-grafico">
+
+                <h2>Vendas por Categoria</h2>
+
+                <button class="btn-exportar-analise">
+                    <i class="bi bi-file-earmark-spreadsheet"></i>
+                    Exportar planilha
+                </button>
+
+            </div>
+
+            <div class="area-grafico">
+
+                <i class="bi bi-graph-up"></i>
+
+                <p>
+                    O gráfico de vendas será exibido aqui após
+                    a seleção do período e das categorias.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/analise-admin.js"></script>
+
+</body>
+
+</html>

@@ -63,3 +63,454 @@
     background-color: white;
     color: #5a2d18;
 }
+
+.enderecos-cliente {
+    margin-top: 25px;
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cabecalho-secao-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.btn-novo-endereco {
+    padding: 10px 15px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.endereco-cliente {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.endereco-cliente h3 {
+    margin-bottom: 10px;
+}
+
+.endereco-cliente p {
+    margin: 5px 0;
+}
+
+.tipo-endereco {
+    display: flex;
+    gap: 10px;
+
+    margin: 15px 0;
+}
+
+.tipo-endereco span {
+    padding: 5px 10px;
+
+    background-color: #eee;
+
+    border-radius: 5px;
+}
+
+.btn-editar-endereco {
+    padding: 8px 15px;
+
+    background-color: white;
+    color: #5a2d18;
+
+    border: 1px solid #5a2d18;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.cartoes-cliente {
+    margin-top: 25px;
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.btn-novo-cartao {
+    padding: 10px 15px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.cartao-cliente {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.cartao-cliente h3 {
+    margin-bottom: 10px;
+}
+
+.cartao-cliente p {
+    margin: 5px 0;
+}
+
+.cartao-preferencial {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 5px 10px;
+
+    background-color: #eee;
+
+    border-radius: 5px;
+}
+
+.btn-editar-cartao {
+    display: block;
+
+    margin-top: 15px;
+    padding: 8px 15px;
+
+    background-color: white;
+    color: #5a2d18;
+
+    border: 1px solid #5a2d18;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.senha-cliente {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.senha-cliente h2 {
+    margin-bottom: 20px;
+}
+
+.senha-cliente label {
+    display: block;
+
+    max-width: 500px;
+    margin-bottom: 15px;
+
+    font-weight: bold;
+}
+
+.senha-cliente input {
+    display: block;
+
+    width: 100%;
+    margin-top: 7px;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-alterar-senha {
+    padding: 10px 15px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.cabecalho-cliente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background-color: #5a2d18;
+    color: white;
+}
+
+.cabecalho-cliente h2 {
+    margin: 0;
+}
+
+.btn-voltar-catalogo {
+    padding: 9px 15px;
+
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.form-editar-endereco {
+    margin-top: 20px;
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    background-color: #f8f8f8;
+}
+
+.form-editar-endereco h3 {
+    margin-bottom: 15px;
+}
+
+.form-editar-endereco label {
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: bold;
+}
+
+.form-editar-endereco input {
+    display: block;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin-top: 5px;
+    padding: 9px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-salvar-endereco-perfil,
+.btn-cancelar-edicao-endereco {
+    padding: 9px 15px;
+
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-salvar-endereco-perfil {
+    background-color: #5a2d18;
+    color: white;
+    border: none;
+}
+
+.btn-cancelar-edicao-endereco {
+    background-color: white;
+    color: #5a2d18;
+    border: 1px solid #5a2d18;
+}
+
+.form-editar-cartao {
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-editar-cartao h3 {
+    margin-bottom: 15px;
+}
+
+.form-editar-cartao label {
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: bold;
+}
+
+.form-editar-cartao input {
+    display: block;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin-top: 5px;
+    padding: 9px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-salvar-cartao-perfil,
+.btn-cancelar-edicao-cartao {
+    padding: 9px 15px;
+
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-salvar-cartao-perfil {
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+}
+
+.btn-cancelar-edicao-cartao {
+    background-color: white;
+    color: #5a2d18;
+
+    border: 1px solid #5a2d18;
+}
+
+.form-novo-endereco-perfil {
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-novo-endereco-perfil label {
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: bold;
+}
+
+.form-novo-endereco-perfil input {
+    display: block;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin-top: 5px;
+    padding: 9px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-salvar-novo-endereco,
+.btn-cancelar-novo-endereco {
+    padding: 9px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-salvar-novo-endereco {
+    background-color: #5a2d18;
+    color: white;
+    border: none;
+}
+
+.btn-cancelar-novo-endereco {
+    background-color: white;
+    color: #5a2d18;
+    border: 1px solid #5a2d18;
+}
+
+.form-novo-cartao-perfil {
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-novo-cartao-perfil label {
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: bold;
+}
+
+.form-novo-cartao-perfil input {
+    display: block;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin-top: 5px;
+    padding: 9px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-salvar-novo-cartao,
+.btn-cancelar-novo-cartao {
+    padding: 9px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-salvar-novo-cartao {
+    background-color: #5a2d18;
+    color: white;
+    border: none;
+}
+
+.btn-cancelar-novo-cartao {
+    background-color: white;
+    color: #5a2d18;
+    border: 1px solid #5a2d18;
+}
+
+.cupons-cliente {
+    margin-top: 25px;
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cupons-cliente h2 {
+    margin-bottom: 20px;
+}
+
+.cupom-cliente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.cupom-cliente h3 {
+    margin-bottom: 5px;
+}
+
+.cupom-cliente strong {
+    color: #5a2d18;
+}

@@ -22,6 +22,17 @@ const etapaResumo = document.querySelector(".etapa-resumo");
 
 const botaoConfirmarPedido = document.querySelector(".btn-confirmar-pedido");
 
+const botaoVoltarCarrinho = document.querySelector(".btn-voltar-carrinho");
+
+const botaoCancelarEndereco = document.querySelector(".btn-cancelar-endereco");
+
+const botaoCancelarNovoCartao =
+    document.querySelector(".btn-cancelar-novo-cartao");
+
+botaoVoltarCarrinho.addEventListener("click", function () {
+    window.location.href = "carrinho.html";
+});
+
 botaoContinuarPagamento.addEventListener("click", function(){
     etapaEndereco.style.display ="none";
     etapaPagamento.style.display = "block";
@@ -56,4 +67,16 @@ botaoConfirmarPedido.addEventListener("click", function(){
     alert("Pedido Realizado com sucesso");
 
     window.location.href = "pedidos.html";
+});
+
+botaoCancelarEndereco.addEventListener("click", function () {
+
+    formularioNovoEndereco.style.display = "none";
+
+});
+
+botaoCancelarNovoCartao.addEventListener("click", function () {
+
+    formularioNovoCartao.style.display = "none";
+
 });

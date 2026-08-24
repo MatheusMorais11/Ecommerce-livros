@@ -4,6 +4,8 @@ const filtroStatus = document.querySelector(".filtro-status");
 
 const pedidosAdmin = document.querySelectorAll(".pedido-admin");
 
+const botaoVoltarAdmin = document.querySelector(".btn-voltar-admin");
+
 botoesAtualizarStatus.forEach(function (botao) {
 
     botao.addEventListener("click", function () {
@@ -46,4 +48,8 @@ filtroStatus.addEventListener("change", function(){
             pedido.style.display = "none";
         }
     });
+});
+
+botaoVoltarAdmin.addEventListener("click", function () {
+    window.location.href = "admin.html";
 });

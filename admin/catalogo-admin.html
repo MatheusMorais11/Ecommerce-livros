@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo e Estoque - Administração</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/catalogo-admin.css">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="pagina-catalogo-admin">
+
+    <header class="cabecalho-admin">
+
+        <h2>E-commerce de Livros</h2>
+
+        <button class="btn-voltar-admin">
+            <i class="bi bi-arrow-left"></i>
+            Painel
+        </button>
+
+    </header>
+
+    <main class="catalogo-admin">
+
+        <div class="cabecalho-catalogo-admin">
+
+            <h1>Catálogo e Estoque</h1>
+
+            <button class="btn-novo-livro">
+                <i class="bi bi-plus-lg"></i>
+                Cadastrar livro
+            </button>
+
+        </div>
+
+<section class="lista-livros-admin">
+
+    <article class="livro-admin">
+
+        <div class="capa-livro-admin">
+            Capa
+        </div>
+
+        <div class="info-livro-admin">
+            <h2>O Hobbit</h2>
+
+            <p><strong>Autor:</strong> J.R.R. Tolkien</p>
+            <p><strong>Preço:</strong> R$ 49,90</p>
+            <p><strong>Estoque:</strong> 12 unidades</p>
+            <p><strong>Status:</strong> Ativo</p>
+        </div>
+
+        <div class="acoes-livro-admin">
+            <button class="btn-editar-livro">
+                Editar
+            </button>
+
+            <button class="btn-alterar-estoque">
+                Alterar estoque
+            </button>
+
+            <button class="btn-inativar-livro">
+                Inativar
+            </button>
+        </div>
+
+    </article>
+
+
+    <article class="livro-admin">
+
+        <div class="capa-livro-admin">
+            Capa
+        </div>
+
+        <div class="info-livro-admin">
+            <h2>1984</h2>
+
+            <p><strong>Autor:</strong> George Orwell</p>
+            <p><strong>Preço:</strong> R$ 39,90</p>
+            <p><strong>Estoque:</strong> 5 unidades</p>
+            <p><strong>Status:</strong> Ativo</p>
+        </div>
+
+        <div class="acoes-livro-admin">
+            <button class="btn-editar-livro">
+                Editar
+            </button>
+
+            <button class="btn-alterar-estoque">
+                Alterar estoque
+            </button>
+
+            <button class="btn-inativar-livro">
+                Inativar
+            </button>
+        </div>
+
+    </article>
+
+
+    <article class="livro-admin">
+
+        <div class="capa-livro-admin">
+            Capa
+        </div>
+
+        <div class="info-livro-admin">
+            <h2>Dom Casmurro</h2>
+
+            <p><strong>Autor:</strong> Machado de Assis</p>
+            <p><strong>Preço:</strong> R$ 29,90</p>
+            <p><strong>Estoque:</strong> 0 unidades</p>
+            <p><strong>Status:</strong> Inativo</p>
+        </div>
+
+        <div class="acoes-livro-admin">
+            <button class="btn-editar-livro">
+                Editar
+            </button>
+
+            <button class="btn-alterar-estoque">
+                Alterar estoque
+            </button>
+
+            <button class="btn-reativar-livro">
+                Reativar
+            </button>
+        </div>
+
+    </article>
+
+</section>
+
+    </main>
+
+<!-- Modal para editar livro -->
+<div class="modal-editar-livro" style="display: none;">
+
+    <div class="conteudo-modal-editar">
+
+        <button class="btn-fechar-edicao">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+        <h2>Editar livro</h2>
+
+        <label>
+            Título:
+            <input type="text" class="editar-titulo">
+        </label>
+
+        <label>
+            Autor:
+            <input type="text" class="editar-autor">
+        </label>
+
+        <label>
+            Preço:
+            <input type="text" class="editar-preco">
+        </label>
+
+        <label>
+            Estoque:
+            <input type="number" class="editar-estoque" min="0">
+        </label>
+
+        <button class="btn-salvar-edicao">
+            Salvar alterações
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Modal para cadastrar livro -->
+<div class="modal-cadastrar-livro" style="display: none;">
+
+    <div class="conteudo-modal-cadastrar">
+
+        <button class="btn-fechar-cadastro">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+        <h2>Cadastrar livro</h2>
+
+        <label>
+            Título:
+            <input type="text" class="cadastro-titulo">
+        </label>
+
+        <label>
+            Autor:
+            <input type="text" class="cadastro-autor">
+        </label>
+
+        <label>
+            Preço:
+            <input type="text" class="cadastro-preco" placeholder="Ex: 49,90">
+        </label>
+
+        <label>
+            Estoque:
+            <input type="number" class="cadastro-estoque" min="0">
+        </label>
+
+        <button class="btn-salvar-cadastro-livro">
+            Cadastrar livro
+        </button>
+
+    </div>
+
+</div>
+
+    <script src="../js/catalogo-admin.js"></script>
+
+</body>
+
+</html>

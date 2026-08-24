@@ -1,0 +1,86 @@
+.pagina-clientes-admin {
+    background-color: #f5f2ef;
+}
+
+.cabecalho-admin {
+    background-color: #5a2d18;
+    color: white;
+
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-voltar-admin {
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.clientes-admin {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.clientes-admin h1 {
+    margin-bottom: 25px;
+}
+
+.busca-cliente-admin {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.campo-busca-cliente {
+    flex: 1;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-buscar-cliente {
+    padding: 10px 15px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.lista-clientes-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cliente-admin {
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cliente-admin h2 {
+    margin-bottom: 10px;
+}
+
+.cliente-admin p {
+    margin: 5px 0;
+}
