@@ -110,32 +110,70 @@
 
     </section>
 
-    <section class="etapa-pagamento" style="display: none;">
-        <h2>2. Pagamento</h2>
-        <p>Selecione um cartão cadastrado</p>
+<section class="etapa-pagamento" style="display: none;">
 
-        <div class="cartoes">
+    <h2>2. Pagamento</h2>
+    <p>Selecione uma ou mais formas de pagamento</p>
+
+    <div class="cartoes">
+
+        <div class="cartao-pagamento">
 
             <label class="cartao">
-                <input type="radio" name="cartao" checked>
+                <input type="checkbox" class="cartao-selecionado">
+
                 <span>
                     <strong>Mastercard final 4587</strong><br>
-                    Cartao preferencial
+                    Cartão preferencial
                 </span>
             </label>
 
+            <input type="text"
+                class="valor-cartao"
+                placeholder="Valor neste cartão">
+
+        </div>
+
+        <div class="cartao-pagamento">
+
             <label class="cartao">
-                <input type="radio" name="cartao">
+                <input type="checkbox" class="cartao-selecionado">
+
                 <span>
                     <strong>Visa final 2021</strong>
                 </span>
             </label>
-            
+
+            <input type="text"
+                class="valor-cartao"
+                placeholder="Valor neste cartão">
+
         </div>
 
-        <button class="btn-novo-cartao">
-            + Cadastrar novo cartão
-        </button>
+    </div>
+
+    <div class="cupom-checkout">
+
+        <label>
+            Cupom:
+
+            <select class="cupom-pagamento">
+                <option value="">Nenhum cupom</option>
+                <option value="LIVRO10">
+                    LIVRO10 - 10% de desconto
+                </option>
+                <option value="TROCA0997">
+                    TROCA0997 - R$ 39,90
+                </option>
+            </select>
+
+        </label>
+
+    </div>
+
+    <button class="btn-novo-cartao">
+        + Cadastrar novo cartão
+    </button>
 
     <div class="form-novo-cartao" style="display: none;">
 
@@ -168,13 +206,14 @@
         <button class="btn-cancelar-novo-cartao">
             Cancelar
         </button>
+
     </div>
 
-        <button class="btn-continuar-resumo">
-            Continuar
-        </button>
-        
-    </section>
+    <button class="btn-continuar-resumo">
+        Continuar
+    </button>
+
+</section>
 
     <section class="etapa-resumo" style="display: none;">
 
@@ -194,15 +233,18 @@
 
         <div class="resumo-valores">
             <p>Subtotal: <strong>R$ 49,90</strong></p>
-            <p>Desconto: <strong>R$ 0,00</strong></p>
             <p>Frete: <strong>R$ 10,00</strong></p>
             <p>Total: <strong>R$ 59,90</strong></p>
         </div>
 
         <div class="resumo-pagamento">
-            <h3>Pagamento</h3>
-            <p>Mastercard final 4587</p>
-        </div>
+
+            <h3>Pagamento combinado</h3>
+
+            <p>Mastercard final 4587 - R$ 20,00</p>
+            <p>Visa final 2021 - R$ 20,00</p>
+            <p>Cupom TROCA0997 - R$ 19,90</p>
+        </div>        
 
         <button class="btn-confirmar-pedido">
             Confirmar pedido

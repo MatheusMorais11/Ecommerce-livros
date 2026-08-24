@@ -141,7 +141,7 @@
 
     border: none;
     border-radius: 6px;
-    
+
     cursor: pointer;
 }
 
@@ -317,3 +317,36 @@
     cursor: pointer;
 }
 
+.cartao-pagamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.valor-cartao {
+    width: 180px;
+
+    padding: 9px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cupom-checkout {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cupom-checkout select {
+    margin-left: 5px;
+    padding: 9px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
