@@ -253,3 +253,48 @@ body{ /* Configuraçoes gerais de todas as paginas*/
     color: #555;
     font-size: 14px;
 }
+
+/* Formulário de cadastro do cliente */
+.form-cadastro-cliente {
+    margin-top: 20px;
+    padding-top: 20px;
+
+    border-top: 1px solid #ddd;
+}
+
+.form-cadastro-cliente h2 {
+    margin-bottom: 15px;
+}
+
+.form-cadastro-cliente label {
+    display: block;
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+
+.form-cadastro-cliente input {
+    display: block;
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-salvar-cadastro {
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 10px;
+
+    background-color: #5a2d18;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}

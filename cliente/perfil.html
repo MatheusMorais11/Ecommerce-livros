@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body class="pagina-perfil">
+
+    <header class="cabecalho-cliente">
+
+        <h2>E-commerce de Livros</h2>
+
+        <nav class="menu-cliente">
+            <button class="btn-voltar-catalogo">
+                <i class="bi bi-arrow-left"></i>
+                Catálogo
+            </button>
+        </nav>
+
+    </header>
+
+    <main class="perfil">
+
+        <h1>Meu Perfil</h1>
+
+        <section class="dados-cliente">
+
+            <h2>Dados pessoais</h2>
+            
+            <p class="status-cliente">
+                Status: Ativo
+            </p>
+            
+            <label>
+                Nome:
+                <input type="text"
+                    class="campo-nome"
+                    value="Cliente 1"
+                    disabled>
+            </label>
+
+            <label>
+                CPF:
+                <input type="text"
+                    value="123.456.789-00"
+                    disabled>
+            </label>
+
+            <label>
+                E-mail:
+                <input type="email"
+                    class="campo-email"
+                    value="cliente1@email.com"
+                    disabled>
+            </label>
+
+            <label>
+                Telefone:
+                <input type="text"
+                    class="campo-telefone"
+                    value="(11) 99999-9999"
+                    disabled>
+            </label>
+
+            <div class="acoes-perfil">
+
+                <button class="btn-editar-perfil">
+                    Editar dados
+                </button>
+
+                <button class="btn-salvar-perfil"
+                style="display: none;">
+                Salvar alterações
+            </button>
+
+            <button class="btn-inativar-cliente">
+                Inativar cliente
+            </button>
+
+        </div>
+    </section>
+</main>
+    
+<script src="../js/perfil.js"></script>
+
+</body>
+</html>

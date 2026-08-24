@@ -45,9 +45,9 @@
             <div class="conteudo-modal">
 
                 <!--Botao para fechar o modal-->
-                <buttom class="btn-fechar-modal">
+                <button class="btn-fechar-modal">
                     <i class="bi bi-x-lg"></i>
-                </buttom>
+                </button>
 
                 <h2>Login</h2>
                 <p>Selecione um cliente para entrar </p>
@@ -71,15 +71,46 @@
                         
                     </div> 
                     <!--So aparece depois que um cliente for selecionado-->
-                    <buttom class="btn-entrar-cliente">
+                    <button class="btn-entrar-cliente">
                         Entrar
-                    </buttom>
+                    </button>
                     <p class="texto-cadastro">Ainda não cadastrado?</p>
 
                     <button class="btn-cadastrar">Cadastrar-se</button>
+
+                    <div class="form-cadastro-cliente" style="display: none;">
+
+                        <h2>Cadastrar cliente</h2>
+
+                        <label>
+                            Nome:
+                            <input type="text">
+                        </label>
+
+                        <label>
+                            CPF:
+                            <input type="text" placeholder="000.000.000-00">
+                        </label>
+
+                    <label>
+                        Email:
+                        <input type="email">
+                    </label>
+
+                    <label>
+                        Telefone:
+                        <input type="text" placeholder="(00) 00000-0000">
+                    </label>
+
+                    <button class="btn-salvar-cadastro">
+                        Salvar cadastro
+                    </button>
+
              </div> 
          </div> 
-         <script src="js/app.js"></script> /* conexao com o javascript*/
+    </div>
+
+         <script src="js/app.js"></script> <!--conexao com o javascript--> 
 </body>
 
 </html>
